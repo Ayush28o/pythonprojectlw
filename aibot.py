@@ -1,6 +1,6 @@
 from google import genai
 
-key = "AIzaSyDKVmfvCeLXPdBnwOdyXhQYeBpdjGauhMo"
+key = "put ur key"
 MODEL_NAME = "gemini-2.5-flash"
 
 client = genai.Client(api_key=key) 
@@ -16,4 +16,5 @@ while True:
         model=MODEL_NAME, 
         contents=[user_input]
     )
+
     print("BOT : ", response.text)
